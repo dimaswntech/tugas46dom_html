@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>klik untuk merubah warna</p>
+    <button onclick="tugas()">klik</button>
+    <p id="change"></p>
+<script type="text/javascript">
+function tugas(){
+    var warna =  prompt("Input Warna");
+    if(warna != null){
+        document.body.style.backgroundColor=warna;
+        document.getElementById("change").innerHTML="background manjadi ="+warna;
+    }
+}
+</script>
+</body>
+</html>
